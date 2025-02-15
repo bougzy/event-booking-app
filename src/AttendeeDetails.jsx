@@ -6,6 +6,7 @@ import { FaEnvelope } from "react-icons/fa";
 import ProgressLineIcon from "./assets/progressline.svg";
 import EnvelopeIcon from "./assets/envelope.svg";
 import ProgressIconTwo from "./assets/progressicontwo.svg";
+import { Link } from "react-router-dom";
 
 const AttendeeDetails = () => {
   const formik = useFormik({
@@ -113,7 +114,7 @@ const AttendeeDetails = () => {
 
         <div className="button-group">
           <button type="button" className="back-button">
-            Back
+          <Link to="/">Back</Link>
           </button>
           <button type="submit" className="submit-button">
             Get My Free Ticket
